@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./public/css/main.css" />
+  <nav class="navbar sticky">
+    <ul class="nav-list">
+      <li><b>Nad_on:</b></li>
+      <li><a href="./index.html"><button>Home</button></a></li>
+      <li class="hidden" id="gated-content-minigames"><a href="./minigames.html"><button>Minigames</button></a></li>
+      <li><button id="btn-login" disabled="true" onclick="login()">Sign In</button></li>
+      <li><button id="btn-logout" disabled="true" onclick="logout()">Sign Out</button></li>
+    </ul>
+  </nav>
+</head>
+
+<body>
+  <div class="form">
+    <h1 class="title">Welcome To <b><i>Nad_on</i></b></h1>
+    <h2 class="title">Not seeing any <b>Content?</b> Sign in.</h2>
+    <div class="hidden" id="gated-content-lorem-ipsum">
+      <p>
+        You're seeing this content because you're currently
+        <strong>logged in</strong>.
+      </p>
+      <label>
+        Access token:
+        <pre id="ipt-access-token"></pre>
+      </label>
+      <label>
+        User profile:
+        <pre id="ipt-user-profile"></pre>
+      </label>
+    </div>
+  </div>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.1/auth0-spa-js.production.js"></script>
+  <script src="./public/js/app.js"></script>
+</body>
+
+</html>

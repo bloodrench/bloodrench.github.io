@@ -35,8 +35,7 @@ const updateUI = async () => {
     document.getElementById("btn-login").disabled = isAuthenticated;
     if (isAuthenticated) {
         document.getElementById("gated-content-lorem-ipsum").classList.remove("hidden")
-        document.getElementById("inverse-gated").classList.remove("unhidden")
-        document.getElementById("inverse-gated").classList.add("hidden")
+        document.getElementById("inverse-gated").style = "display: none;"
         /*document.getElementById(
             "ipt-access-token"
         ).innerHTML = await auth0Client.getTokenSilently();*/

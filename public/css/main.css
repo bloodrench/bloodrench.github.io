@@ -150,9 +150,15 @@ body {
   margin-left: 5%;
 }
 
+.searchbar-holder {
+  justify-content: center;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .searchbar {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
   width: 70%;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -167,4 +173,9 @@ body {
   border: 1px solid #ffffff80;
   transition: 0.5s ease;
   user-select: none;
+}
+
+.searchbtn {
+  width: 5%;
+  margin-right: 15%;
 }

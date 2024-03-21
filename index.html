@@ -42,10 +42,10 @@
       </h1>
       <h2 class="unhidden" id="inverse-gated">Want your client or hired person(s) to know who you are? Sign in.</h2>
       <div class="hidden" id="gated-content-lorem-ipsum">
-        <p>
+        <h2>
           You're
           <strong>logged in</strong>. Your client(or the person you have commissioned) will know who you are.
-        </p>
+        </h2>
         <label>
           User profile:
           <pre id="ipt-user-profile"></pre>
@@ -53,7 +53,10 @@
       </div>
     </div>
     <div class="sub">
-      <div class="searchbar-holder"><input type="search" class="searchbar" placeholder="Search for awesome here..."/></div>
+      <div class="searchbar-holder">
+        <input type="search" class="searchbar" placeholder="Search for awesome here..."/>
+        <div class="searchbtn"><button>Search</button></div>
+      </div>
     </div>
     <script src="https://cdn.auth0.com/js/auth0-spa-js/2.1/auth0-spa-js.production.js"></script>
     <script src="./public/js/app.js"></script>

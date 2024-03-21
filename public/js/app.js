@@ -43,9 +43,15 @@ const updateUI = async () => {
         document.getElementById("ipt-user-profile").textContent = JSON.stringify(
             await auth0Client.getUser()
         );
+        await profilePicture();
 
     } else {
         document.getElementById("gated-content").classList.add("hidden");
+    }
+
+    async function profilePicture() {
+        document.getElementById("profile-picture-nav").src = (await auth0Client.getUser()).picture;
+        document.getElementById("profile-picture-nav").style = "width: 50px; height: 50px;";
     }
 };
 updateUI();

@@ -66,7 +66,7 @@ const login = async () => {
 const logout = () => {
     auth0Client.logout({
         logoutParams: {
-            returnTo: "https://bloodrench.github.io/nadon"
+            returnTo: "https://bloodrench.github.io/"
         }
     });
 };

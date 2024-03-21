@@ -51,7 +51,7 @@ const updateUI = async () => {
 
     async function profilePicture() {
         document.getElementById("profile-picture-nav").src = (await auth0Client.getUser()).picture;
-        document.getElementById("profile-picture-nav").style = "width: 50px; height: 50px;";
+        document.getElementById("profile-picture-nav").style = "width: 50px; height: 50px; border: solid; border-radius: 100px;";
     }
 };
 updateUI();

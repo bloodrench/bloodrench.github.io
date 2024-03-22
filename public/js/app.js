@@ -58,7 +58,7 @@ updateUI();
 const login = async () => {
     await auth0Client.loginWithRedirect({
         authorizationParams: {
-            redirect_uri: "https://bloodrench.github.io/nadon"
+            redirect_uri: "https://bloodrench.github.io/"
         }
     });
 };
@@ -66,7 +66,7 @@ const login = async () => {
 const logout = () => {
     auth0Client.logout({
         logoutParams: {
-            returnTo: "https://bloodrench.github.io/nadon"
+            returnTo: "https://bloodrench.github.io/"
         }
     });
 };

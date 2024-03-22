@@ -58,7 +58,7 @@ updateUI();
 const login = async () => {
     await auth0Client.loginWithRedirect({
         authorizationParams: {
-            redirect_uri: "https://bloodrench.github.io/"
+            redirect_uri: "https://bloodrench.github.io/nadon"
         }
     });
 };
